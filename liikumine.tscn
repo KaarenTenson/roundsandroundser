@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbtjpeibregct"]
+
+[ext_resource type="Script" path="res://liikumine.gd" id="1_xag2m"]
+[ext_resource type="Texture2D" uid="uid://bb7euxqlubenj" path="res://pixel/Pixel Adventure 1/Free/Main Characters/Mask Dude/Jump (32x32).png" id="2_px00x"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_763cb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e3jdy"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-176, 75)
+disable_mode = 1
+script = ExtResource("1_xag2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_763cb")
+use_parent_material = true
+position = Vector2(588, 215)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_px00x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(587, 216)
+shape = SubResource("CapsuleShape2D_e3jdy")
