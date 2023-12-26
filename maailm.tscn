@@ -1,5 +1,1 @@
-[gd_scene format=3 uid="uid://dhxdk7cg1xk7g"]
 
-[node name="Node2D" type="Node2D"]
-
-[node name="hey kaaren" type="Timer" parent="."]
