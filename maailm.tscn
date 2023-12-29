@@ -475,7 +475,7 @@ sources/1 = SubResource("TileSetAtlasSource_rtmj3")
 position = Vector2(-508, -118)
 
 [node name="StaticBody2D" parent="CharacterBody2D" instance=ExtResource("2_7hdg2")]
-position = Vector2(612, 190)
+position = Vector2(596, 222)
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1

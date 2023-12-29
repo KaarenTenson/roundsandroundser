@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://jwnqtfdwog28"]
+[gd_scene load_steps=6 format=3 uid="uid://jwnqtfdwog28"]
 
 [ext_resource type="Texture2D" uid="uid://bxv14abk3wopf" path="res://pildid/Sword_Pixel_art_-_Radin.png" id="1_b5gaf"]
 [ext_resource type="Script" path="res://pixel/mook.cs" id="1_f7xv1"]
@@ -14,28 +14,45 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4),
 "transitions": PackedFloat32Array(1, 6.96439, 1),
-"update": 2,
-"values": [0.0, 0.905826, 0.0]
+"update": 0,
+"values": [0.0, 1.22173, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ujbsm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f5hgc"]
 _data = {
+"RESET": SubResource("Animation_ujbsm"),
 "new_animation": SubResource("Animation_ymnpf")
 }
 
 [node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(0, 20)
 script = ExtResource("1_f7xv1")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(9.97925, -5.5719)
-rotation = 0.250063
+position = Vector2(36.6244, -20.0662)
+rotation = 0.234918
 scale = Vector2(0.0831295, 0.0834353)
 polygon = PackedVector2Array(409, -409, 312.765, -217.234, 216.529, -121.352, -72.1766, 166.296, -168.412, 70.4136, 120.294, -217.234, 216.529, -313.117)
 
 [node name="mook" type="Sprite2D" parent="."]
-position = Vector2(9.76817, -5.70808)
+position = Vector2(36.6245, -19.8531)
 rotation = 0.255378
-scale = Vector2(0.0831295, 0.0834353)
+scale = Vector2(0.0825786, 0.0855453)
 texture = ExtResource("1_b5gaf")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

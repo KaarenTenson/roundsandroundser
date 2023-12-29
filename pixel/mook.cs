@@ -11,7 +11,12 @@ public partial class mook : Node2D
 		 
 		if (@event is InputEventMouseButton eventMouseButton){
 			_animationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
-			_animationPlayer.Play("new_animation");
+			if (a==true){
+			_animationPlayer.Play("new_animation");}
+			else{
+				//_animationPlayer.play_backwards("new_animation");
+				
+			}
 			}
 	}
 	// Called when the node enters the scene tree for the first time.
@@ -45,9 +50,9 @@ public partial class mook : Node2D
 		Vector2 currentPosition = Position;
 		if (c==0){
 		// Update the x-coordinate by adding one unit
-		currentPosition+=new Vector2(-50,0);}
+		currentPosition+=new Vector2(-20,0);}
 		else{
-			currentPosition+=new Vector2(50,0);
+			currentPosition+=new Vector2(20,0);
 		}
 
 		// Set the new position for the sprite
