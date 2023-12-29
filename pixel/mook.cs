@@ -32,7 +32,7 @@ public partial class mook : Node2D
 			MoveSprite(0);
 			}
 		}
-		else{
+		else if (Input.IsActionPressed("ui_right")){
 		if(a==false){
 			a=true;
 			MoveSprite(1);
