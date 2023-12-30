@@ -14,7 +14,7 @@ public partial class mook : Node2D
 			if (a==true){
 			_animationPlayer.Play("new_animation");}
 			else{
-				//_animationPlayer.play_backwards("new_animation");
+				_animationPlayer.Play("new_animation_2");
 				
 			}
 			}
